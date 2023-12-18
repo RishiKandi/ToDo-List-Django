@@ -84,3 +84,9 @@ Once your instance is running, you can connect to it using SSH (for Linux instan
 
 Once Connect to EC2 Instance Clone the Repo and run the code, Navigate to the public ip address of instance and follwoed by port
 (python3 manage.py runserver 0.0.0.0:8000)
+
+**Dockerize Deployement**
+Created a Dockerfile 
+Build Docekrfile (docker build -t imageName .)
+Run Image (docker run -d -p 8000:8000 imageName)
+That's It.
