@@ -38,4 +38,49 @@ $ python manage.py runserver
 
 Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
 
-Cheers and Happy Coding :)
+**Deploy on AWS EC2 Instance:**
+
+**Navigate to the EC2 Dashboard:**
+Once signed in, go to the "Services" menu at the top left corner and select "EC2" under the "Compute" section. This will take you to the EC2 Dashboard.
+
+**Launch an Instance:**
+On the EC2 Dashboard, click the "Launch Instance" button.
+
+**Choose an Amazon Machine Image (AMI):**
+Select an AMI that suits your needs. The AMI is essentially a pre-configured template for your virtual machine.
+
+**Choose an Instance Type**:
+Select the instance type based on your requirements. Different instance types offer varying amounts of CPU, memory, storage, and networking capacity.
+
+**Configure Instance:**
+Configure the instance details such as the number of instances, network settings, and other options. You can use the default settings or customize them as needed.
+
+**Add Storage:**
+Specify the amount of storage for your instance. You can add additional volumes if necessary.
+
+**Add Tags (Optional):**
+Add tags to your instance for better organization and identification. Tags are key-value pairs.
+
+**Configure Security Group:**
+Configure the security group to control inbound and outbound traffic to your instance. You need to define rules for which ports should be open.
+
+**Review Configuration:**
+Review your instance configuration to ensure everything is set up correctly.
+
+**Launch:**
+Click the "Launch" button.
+
+**Key Pair:**
+Choose an existing key pair or create a new one. A key pair is required to connect to your instance securely.
+
+**Launch Instances:**
+Click the "Launch Instances" button.
+
+**View Instances:**
+After launching, go back to the EC2 Dashboard and click on "Instances" in the left navigation pane to view your newly created instance.
+
+**Connect to the Instance:**
+Once your instance is running, you can connect to it using SSH (for Linux instances) or Remote Desktop (for Windows instances). Use the key pair you selected or created during the launch process.
+
+Once Connect to EC2 Instance Clone the Repo and run the code, Navigate to the public ip address of instance and follwoed by port
+(python3 manage.py runserver 0.0.0.0:8000)
