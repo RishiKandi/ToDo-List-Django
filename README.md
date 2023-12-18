@@ -1,3 +1,4 @@
+Code From @shreys7 https://github.com/shreys7
 # django-todo
 A simple todo app built with django
 
