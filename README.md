@@ -88,8 +88,18 @@ Once Connect to EC2 Instance Clone the Repo and run the code, Navigate to the pu
 **Dockerize Deployement**
 Created a Dockerfile
  
-Build Docekrfile (docker build -t imageName .)
+Build Docekrfile 
 
-Run Image (docker run -d -p 8000:8000 imageName)
+```bash [docker build -t imageName .]
+
+Run Container
+
+```bash [docker run -d -p 8000:8000 imageName]
+
+Check Docker Logs
+```bash [docker logs (container id)]
+
+Check Running Containers
+```bash [docekr ps -a]
 
 That's It. Deployed on EC2 Instance with dockerfile.
