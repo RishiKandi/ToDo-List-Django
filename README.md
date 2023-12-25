@@ -104,4 +104,4 @@ Check Running Containers
 ```bash [docekr ps -a]```
 
 
-That's It. Deployed on EC2 Instance with dockerfile.
+That's It. Deployed on EC2 Instance with dockerfile...
